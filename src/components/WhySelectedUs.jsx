@@ -34,7 +34,7 @@ export default function WhySelectUs() {
                     <h5 className="text-[#b2ad4a] font-semibold mb-2 uppercase tracking-wide">Services</h5>
                     <h2 className="text-3xl font-bold mb-4 text-gray-900">Why Select Us?</h2>
                     <p className="text-gray-600 mb-6 leading-relaxed max-w-xl">
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ullam dolorem laboriosam, tempore voluptatibus ducimus ut consequuntur soluta iure nam quidem hic pariatur voluptas dolor enim, adipisci mollitia odit! Beatae ullam facere quasi? Accusantium ex consequatur mollitia voluptatibus ea, officia, earum iure dolore explicabo minus perspiciatis amet in corrupti molestias?
                     </p>
                     <button className="bg-[#b2ad4a] text-white font-semibold px-5 py-2 rounded-md hover:bg-[#9b9640] transition">
                         Free Consultation
