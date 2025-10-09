@@ -50,7 +50,7 @@ export default function WhySelectUs() {
                             className="bg-white rounded-lg shadow-md hover:shadow-xl transition border border-gray-100 p-6 text-center"
                         >
                             <div className="text-4xl mb-4 text-[#b2ad4a]">{card.icon}</div>
-                            <h3 className="font-semibold text-lg mb-2 text-gray-900">{card.title}</h3>
+                            <h3 className="font-semibold text-xl mb-2 text-gray-900">{card.title}</h3>
                             <p className="text-gray-500 text-sm leading-relaxed">{card.desc}</p>
                         </div>
                     ))}

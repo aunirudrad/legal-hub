@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import WhySelectUs from "../components/WhySelectedUs";
 import AboutIntro from "../components/AboutIntro";
+import CaseStudiesSection from "../components/CaseStudiesSection";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <HeroSection />
             <WhySelectUs></WhySelectUs>
             <AboutIntro></AboutIntro>
+            <CaseStudiesSection></CaseStudiesSection>
         </div>
     );
 };

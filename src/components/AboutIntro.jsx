@@ -32,15 +32,15 @@ export default function AboutIntro() {
         switch (activeTab) {
             case "mission":
                 return (
-                    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At iste quis tempore nisi obcaecati labore eligendi cum libero repellat nam sunt veritatis, debitis facilis praesentium aspernatur assumenda suscipit quasi totam voluptatum ad esse aperiam ex sint? Voluptatem dolores consequuntur error ex blanditiis a, ad aspernatur magni nobis iure laudantium accusamus perspiciatis repudiandae, voluptatum fugit suscipit praesentium excepturi sequi delectus maiores."
                 );
             case "vision":
                 return (
-                    "Our vision is to deliver justice with commitment and compassion, ensuring fairness and trust in every legal battle we fight."
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore labore nisi accusantium est. Numquam sapiente rem, corrupti distinctio dolorem ipsum! Magni temporibus animi ipsam praesentium ea aperiam reprehenderit quasi ab."
                 );
             case "value":
                 return (
-                    "We value transparency, honesty, and excellence in our legal practices to achieve the highest satisfaction for our clients."
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste consequuntur dolorem maiores modi, amet quasi commodi. Perspiciatis reiciendis libero, blanditiis aspernatur molestiae dolore sint harum quo, veniam exercitationem quos porro officiis, vel explicabo? Magnam, quos eligendi quis, odio amet ducimus quod repellat et soluta consequatur dolorum odit dicta modi fuga cumque, sint inventore non consectetur? Repellendus accusamus minima quo velit magnam laborum cupiditate asperiores corrupti. Quidem unde rerum sit nobis? Soluta nobis numquam odit blanditiis possimus quod tempore deleniti!"
                 );
             default:
                 return null;

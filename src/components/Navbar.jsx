@@ -6,8 +6,8 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                 <div className="text-xl font-bold">
                     
-                    <span className="text-white">LEGAL</span>
-                    <span className="text-lime-400">HUB</span>
+                    <span className="text-white tracking-wide ">LEGAL</span>
+                    <span className="text-lime-400 tracking-wide">HUB</span>
                     <p className="text-xs tracking-widest">A LAW FIRM AGENCY</p>
                 </div>
 
