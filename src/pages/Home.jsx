@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import WhySelectUs from "../components/WhySelectedUs";
 import AboutIntro from "../components/AboutIntro";
 import CaseStudiesSection from "../components/CaseStudiesSection";
+import OurAttorneys from "../components/OurAttorneys";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <WhySelectUs></WhySelectUs>
             <AboutIntro></AboutIntro>
             <CaseStudiesSection></CaseStudiesSection>
+            <OurAttorneys></OurAttorneys>
         </div>
     );
 };

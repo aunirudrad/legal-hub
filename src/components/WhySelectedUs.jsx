@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export default function WhySelectUs() {
     const cards = [
         {
@@ -20,15 +19,14 @@ export default function WhySelectUs() {
         },
     ]
 
-
     return (
-        <section className="relative py-20 bg-white overflow-hidden">
-            {/* Decorative olive bar behind section */}
-            <div className="absolute top-0 left-0 w-full h-24 bg-[#b2ad4a] -z-10" />
-
+        <section className="relative py-20 bg-white overflow-visible">
+            {/* Decorative olive bar behind cards */}
+            <div className="absolute top-15 left-220 w-2/5 h-45 bg-[#b2ad4a] z-0 transform -translate-y-1/3" />
 
             {/* Section container with responsive margins */}
-            <div className="px-6 md:px-16 lg:px-[320px] grid md:grid-cols-2 gap-10">
+            <div className="relative z-10 px-6 md:px-16 lg:px-[320px] grid md:grid-cols-2 gap-10">
+
                 {/* ---------------- LEFT SECTION ---------------- */}
                 <div className="flex flex-col justify-center">
                     <h5 className="text-[#b2ad4a] font-semibold mb-2 uppercase tracking-wide">Services</h5>
@@ -41,13 +39,12 @@ export default function WhySelectUs() {
                     </button>
                 </div>
 
-
                 {/* ---------------- RIGHT SECTION ---------------- */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 md:col-span-1 gap-6">
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-lg shadow-md hover:shadow-xl transition border border-gray-100 p-6 text-center"
+                            className="bg-white rounded-lg shadow-md hover:shadow-xl transition border border-gray-100 p-6 text-center relative z-10"
                         >
                             <div className="text-4xl mb-4 text-[#b2ad4a]">{card.icon}</div>
                             <h3 className="font-semibold text-xl mb-2 text-gray-900">{card.title}</h3>

@@ -15,7 +15,7 @@ export default function CaseStudyCard({ image, title, category, description }) {
 
 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-[#a5a33b]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white px-4">
+                <div className="absolute inset-0 bg-[#a5a33b]/90 opacity-0 group-hover:opacity-100 group-hover:m-3 group-hover:rounded-md transition-opacity duration-500 flex flex-col justify-center items-center text-white px-4">
                     <h3 className="text-lg font-semibold text-center">{title}</h3>
                     <p className="text-sm mt-1 text-center">{category}</p>
                     {description && (

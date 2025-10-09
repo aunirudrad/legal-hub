@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Ryan Anderson",
+        "specialization": "Civil Lawyer",
+        "image": "ryan.jpg",
+        "quote": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.",
+        "bio": "Ryan has over 12 years of experience handling complex civil cases with a focus on justice and integrity."
+    },
+    {
+        "id": 2,
+        "name": "Greg Washer",
+        "specialization": "Business Lawyer",
+        "image": "self.png",
+        "quote": "Law and order are the pillars of civilization. Greg ensures both stand firm for every client.",
+        "bio": "Greg specializes in corporate law and has represented over 200 businesses nationwide."
+    },
+    {
+        "id": 3,
+        "name": "Jack Smith",
+        "specialization": "Insurance Lawyer",
+        "image": "/images/attorneys/jack.jpg",
+        "quote": "Justice delayed is justice denied. Jack believes in swift and fair representation.",
+        "bio": "Jack provides legal expertise in insurance claim disputes and coverage litigations."
+    },
+    {
+        "id": 4,
+        "name": "Sarah Patel",
+        "specialization": "Criminal Defense",
+        "image": "/images/attorneys/sarah.jpg",
+        "quote": "Every story deserves to be heard — Sarah ensures her clients' voices echo in every courtroom.",
+        "bio": "Sarah has defended hundreds of clients and is known for her fearless advocacy."
+    },
+    {
+        "id": 5,
+        "name": "Michael Green",
+        "specialization": "Family Lawyer",
+        "image": "/images/attorneys/michael.jpg",
+        "quote": "Empathy meets strategy — Michael brings balance to emotionally complex family disputes.",
+        "bio": "Michael focuses on custody, divorce, and family mediation with a client-centered approach."
+    },
+    {
+        "id": 6,
+        "name": "Olivia White",
+        "specialization": "Tax Attorney",
+        "image": "/images/attorneys/olivia.jpg",
+        "quote": "Precision and insight — Olivia turns tax challenges into client victories.",
+        "bio": "Olivia’s deep knowledge in financial law makes her one of the top tax advisors in her region."
+    },
+    {
+        "id": 7,
+        "name": "Ethan Scott",
+        "specialization": "Corporate Lawyer",
+        "image": "/images/attorneys/ethan.jpg",
+        "quote": "In business and in law, clarity is power.",
+        "bio": "Ethan provides comprehensive legal services for corporations and startups alike."
+    },
+    {
+        "id": 8,
+        "name": "Sophia Turner",
+        "specialization": "Employment Lawyer",
+        "image": "/images/attorneys/sophia.jpg",
+        "quote": "The workplace is a stage — everyone deserves fair play.",
+        "bio": "Sophia advocates for employees’ rights and fair labor practices."
+    },
+    {
+        "id": 9,
+        "name": "William Chen",
+        "specialization": "Real Estate Lawyer",
+        "image": "/images/attorneys/william.jpg",
+        "quote": "Behind every great deal is a smart contract.",
+        "bio": "William’s focus is on property law, zoning, and commercial real estate negotiations."
+    },
+    {
+        "id": 10,
+        "name": "Emily Johnson",
+        "specialization": "Environmental Lawyer",
+        "image": "/images/attorneys/emily.jpg",
+        "quote": "Protecting our planet, one case at a time.",
+        "bio": "Emily works with NGOs and corporations to ensure sustainable and lawful operations."
+    },
+    {
+        "id": 11,
+        "name": "Daniel Brooks",
+        "specialization": "Immigration Lawyer",
+        "image": "/images/attorneys/daniel.jpg",
+        "quote": "Borders should never stop dreams from crossing.",
+        "bio": "Daniel has successfully represented hundreds of immigration cases worldwide."
+    },
+    {
+        "id": 12,
+        "name": "Isabella Reed",
+        "specialization": "Intellectual Property",
+        "image": "/images/attorneys/isabella.jpg",
+        "quote": "Ideas are treasures — Isabella ensures they remain yours.",
+        "bio": "With 15 years of IP law experience, Isabella protects creative and digital assets."
+    }
+]
