@@ -6,6 +6,7 @@ import AboutIntro from "../components/AboutIntro";
 import CaseStudiesSection from "../components/CaseStudiesSection";
 import OurAttorneys from "../components/OurAttorneys";
 import Footer from "../components/Footer";
+import AppointmentForm from "../components/AppointmentForm";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <AboutIntro></AboutIntro>
             <CaseStudiesSection></CaseStudiesSection>
             <OurAttorneys></OurAttorneys>
+            <AppointmentForm></AppointmentForm>
             {/* <Footer></Footer> */}
         </div>
     );

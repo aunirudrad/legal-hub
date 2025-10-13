@@ -7,6 +7,7 @@ import About from './pages/About.jsx'
 import Root from './pages/Root.jsx'
 import Attorneys from './pages/Attorneys.jsx'
 import Blog from './pages/Blog.jsx'
+import Contact from './pages/Contact.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         Component: Blog
+      },
+      {
+        path: 'contact',
+        Component: Contact
       }
 
     ],
