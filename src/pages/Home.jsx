@@ -10,13 +10,13 @@ import Footer from "../components/Footer";
 const Home = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <HeroSection />
             <WhySelectUs></WhySelectUs>
             <AboutIntro></AboutIntro>
             <CaseStudiesSection></CaseStudiesSection>
             <OurAttorneys></OurAttorneys>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     );
 };

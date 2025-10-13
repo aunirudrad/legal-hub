@@ -19,3 +19,9 @@
 .rotate-y-180 {
     transform: rotateY(180deg);
 }
+
+.active {
+    color: red;
+    /* Example: change text color for active link */
+    font-weight: bold;
+    /* Example: make text bold for active link */ }

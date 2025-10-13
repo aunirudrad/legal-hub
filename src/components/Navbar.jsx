@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
     return (
@@ -12,13 +13,13 @@ const Navbar = () => {
                 </div>
 
                 <ul className="hidden md:flex space-x-8 text-sm font-medium">
-                    <li><a href="#" className="text-lime-400">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Attorneys</a></li>
-                    <li><a href="#">Practice Areas</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <NavLink to='/' >Home</NavLink>
+                    <NavLink to='/about' >About</NavLink>
+                    <NavLink to='/attorneys' >Attorneys</NavLink>
+                    {/* <NavLink to='/practice-areas' >Practice Areas</NavLink>
+                    <NavLink to='/case-studies' >Case Studies</NavLink> */}
+                    <NavLink to='/blog' >Blog</NavLink>
+                    <NavLink to='/contact' >Contact</NavLink>
                 </ul>
 
                 <button className="bg-lime-500 text-black font-semibold px-4 py-2 rounded-md ml-4">
