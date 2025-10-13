@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "All you want to know about industrial laws",
+        "date": "18",
+        "month": "October",
+        "year": "2019",
+        "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image": "/blogs-images/blog-1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Understanding corporate legal frameworks",
+        "date": "25",
+        "month": "October",
+        "year": "2019",
+        "description": "Explore how corporate laws shape business governance and protect shareholder interests.",
+        "image": "/blogs-images/blog-2.webp"
+    },
+    {
+        "id": 3,
+        "title": "Employment law essentials for HR managers",
+        "date": "02",
+        "month": "November",
+        "year": "2019",
+        "description": "An overview of workplace rights, employee protection acts, and compliance management.",
+        "image": "/blogs-images/blog-3.webp"
+    },
+    {
+        "id": 4,
+        "title": "Why business contracts are the backbone of commerce",
+        "date": "10",
+        "month": "November",
+        "year": "2019",
+        "description": "A detailed insight into why proper documentation and contracts matter in business relationships.",
+        "image": "/images/blog4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "The future of digital law and data protection",
+        "date": "17",
+        "month": "November",
+        "year": "2019",
+        "description": "Learn how digital privacy and cybersecurity laws are transforming the legal landscape.",
+        "image": "/blogs-images/blog-5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Top 5 challenges in industrial dispute resolutions",
+        "date": "21",
+        "month": "November",
+        "year": "2019",
+        "description": "Understand the most common industrial conflicts and how modern legal strategies address them.",
+        "image": "/images/blog6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Legal compliance checklist for startups",
+        "date": "29",
+        "month": "November",
+        "year": "2019",
+        "description": "A must-follow list for new businesses to stay compliant and avoid costly legal mistakes.",
+        "image": "/images/blog7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Environmental law and corporate responsibility",
+        "date": "06",
+        "month": "December",
+        "year": "2019",
+        "description": "Exploring the growing role of environmental regulations in corporate governance.",
+        "image": "/images/blog8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "The evolution of labor laws in South Asia",
+        "date": "12",
+        "month": "December",
+        "year": "2019",
+        "description": "A timeline of major labor law changes shaping the workforce in South Asian economies.",
+        "image": "/images/blog9.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Understanding intellectual property rights",
+        "date": "18",
+        "month": "December",
+        "year": "2019",
+        "description": "How to protect your creative assets, trademarks, and innovations legally.",
+        "image": "/images/blog10.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Legal tips for real estate investors",
+        "date": "23",
+        "month": "December",
+        "year": "2019",
+        "description": "Essential legal guidelines every property buyer or investor should follow before signing deals.",
+        "image": "/images/blog11.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Corporate ethics and legal accountability",
+        "date": "28",
+        "month": "December",
+        "year": "2019",
+        "description": "How transparency, governance, and accountability define modern law practices.",
+        "image": "/images/blog12.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Alternative dispute resolution in business",
+        "date": "03",
+        "month": "January",
+        "year": "2020",
+        "description": "Learn about mediation and arbitration as effective alternatives to lengthy legal proceedings.",
+        "image": "/images/blog13.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Criminal law reforms and their social impact",
+        "date": "09",
+        "month": "January",
+        "year": "2020",
+        "description": "A review of how modern reforms aim to improve justice delivery and protect rights.",
+        "image": "/images/blog14.jpg"
+    },
+    {
+        "id": 15,
+        "title": "The rise of legal technology in law firms",
+        "date": "15",
+        "month": "January",
+        "year": "2020",
+        "description": "Discover how AI and automation are revolutionizing case management and legal research.",
+        "image": "/images/blog15.jpg"
+    }
+]
