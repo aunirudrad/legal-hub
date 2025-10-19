@@ -2,36 +2,57 @@ import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import { FiMessageSquare } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
+import ReactMarkdown from "react-markdown";
 
 export default function ChatWidget() {
     const [messages, setMessages] = useState([
-        { sender: "bot", text: "Hi! This is your assistant from LEGALHUB. How can I help?" }
+        { sender: "bot", text: "Hi! This is your assistant from LEGALHUB. May I know your name?" }
     ]);
     const [question, setQuestion] = useState("");
     const [open, setOpen] = useState(false);
+    const [step, setStep] = useState(0);
+    const [userInfo, setUserInfo] = useState({ name: "", caseType: "", location: "" });
+    const [attorneys, setAttorneys] = useState([]);
+    const [blogData, setBlogData] = useState([]);
+
     const inputRef = useRef(null);
     const chatRef = useRef(null);
 
-    // Auto scroll to bottom on new messages
+    // 🔹 Load JSON data from public folder
     useEffect(() => {
-        if (chatRef.current) {
-            chatRef.current.scrollTop = chatRef.current.scrollHeight;
+        async function loadData() {
+            try {
+                const [att, blogs] = await Promise.all([
+                    fetch("/data/attorneys.json").then((res) => res.json()),
+                    fetch("/data/blogData.json").then((res) => res.json()),
+                ]);
+                setAttorneys(att);
+                setBlogData(blogs);
+            } catch (err) {
+                console.error("Error loading JSON data:", err);
+            }
         }
+        loadData();
+    }, []);
+
+    // 🔹 Auto scroll on new messages
+    useEffect(() => {
+        if (chatRef.current) chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }, [messages, open]);
 
-    // Auto focus input when chat opens
+    // 🔹 Auto focus when chat opens
     useEffect(() => {
         if (open && inputRef.current) inputRef.current.focus();
     }, [open]);
 
-    // Close with Escape key
+    // 🔹 Close with Escape key
     useEffect(() => {
         const onKey = (e) => e.key === "Escape" && setOpen(false);
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
     }, []);
 
-    // Send message and get reply
+    // 🔹 Handle message sending
     async function generateAnswer(e) {
         e.preventDefault();
         if (!question.trim()) return;
@@ -40,29 +61,70 @@ export default function ChatWidget() {
         setMessages((prev) => [...prev, userMessage]);
         setQuestion("");
 
+        // Guided info collection before Gemini call
+        if (step === 0) {
+            setUserInfo({ ...userInfo, name: question });
+            setMessages((prev) => [
+                ...prev,
+                { sender: "bot", text: `Nice to meet you, ${question}! What type of legal case are you consulting about?` },
+            ]);
+            setStep(1);
+            return;
+        }
+
+        if (step === 1) {
+            setUserInfo({ ...userInfo, caseType: question });
+            setMessages((prev) => [
+                ...prev,
+                { sender: "bot", text: "Got it. Which city or region are you located in?" },
+            ]);
+            setStep(2);
+            return;
+        }
+
+        if (step === 2) {
+            const updatedUser = { ...userInfo, location: question };
+            setUserInfo(updatedUser);
+            setMessages((prev) => [
+                ...prev,
+                { sender: "bot", text: `Thanks, ${updatedUser.name}! Let’s continue with your consultation.` },
+            ]);
+            setStep(3);
+            return;
+        }
+
+        // After info collection → send context to Gemini
         try {
+            const context = `
+        You are a professional legal assistant from LEGALHUB.
+        User Details:
+        - Name: ${userInfo.name}
+        - Case Type: ${userInfo.caseType}
+        - Location: ${userInfo.location}
+
+        Attorneys: ${JSON.stringify(attorneys)}
+        Blog Insights: ${JSON.stringify(blogData)}
+
+        Based on this information, answer the following question:
+        "${userMessage.text}"
+      `;
+
             const response = await axios({
                 url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDR7pkcTDsdEkxxyLgpBKCTU6rEnTXeC9E",
                 method: "post",
-                data: {
-                    contents: [
-                        {
-                            parts: [{ text: userMessage.text }]
-                        }
-                    ]
-                }
+                data: { contents: [{ parts: [{ text: context }] }] },
             });
 
             const botReply =
                 response.data?.candidates?.[0]?.content?.parts?.[0]?.text ||
-                "Sorry, I couldn't process that.";
+                "Sorry, I couldn’t process that right now.";
 
             setMessages((prev) => [...prev, { sender: "bot", text: botReply }]);
         } catch (error) {
             console.error("Error:", error);
             setMessages((prev) => [
                 ...prev,
-                { sender: "bot", text: "Something went wrong. Please try again." }
+                { sender: "bot", text: "Something went wrong. Please try again." },
             ]);
         }
     }
@@ -85,8 +147,8 @@ export default function ChatWidget() {
                     {/* Header */}
                     <div className="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-4 py-3">
                         <div>
-                            <p className="text-sm font-semibold text-slate-800">Support Chat</p>
-                            <p className="text-xs text-slate-500">We usually reply in a few minutes</p>
+                            <p className="text-sm font-semibold text-slate-800">LEGALHUB Chat</p>
+                            <p className="text-xs text-slate-500">Available 24/7 for your legal questions</p>
                         </div>
                         <button
                             type="button"
@@ -98,7 +160,7 @@ export default function ChatWidget() {
                         </button>
                     </div>
 
-                    {/* Scrollable Chat Messages */}
+                    {/* Messages */}
                     <div
                         ref={chatRef}
                         className="flex-1 overflow-y-auto bg-white p-4 space-y-3 scroll-smooth"
@@ -112,12 +174,12 @@ export default function ChatWidget() {
                                         : "bg-blue-600 text-white ml-auto"
                                     }`}
                             >
-                                {msg.text}
+                                <ReactMarkdown>{msg.text}</ReactMarkdown>
                             </div>
                         ))}
                     </div>
 
-                    {/* Input Box */}
+                    {/* Input */}
                     <form
                         onSubmit={generateAnswer}
                         className="flex items-center gap-2 border-t border-slate-200 bg-white p-3"
