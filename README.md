@@ -10,6 +10,17 @@ A modern, professional law firm website built with React and Vite, featuring a c
 
 The Legal Hub is a responsive law firm website that showcases legal services, attorney profiles, blog articles, and provides easy client contact options. Built with modern web technologies for optimal performance and user experience.
 
+## 🏆 Top 3 Features
+
+### 1. 💬 Interactive AI Chatbot
+Real-time chat widget that provides instant client support and engagement. The intelligent chatbot assists visitors with legal inquiries, schedules consultations, and guides them through the website, ensuring 24/7 accessibility and immediate responses to potential clients' questions.
+
+### 2. 🎨 Modern & Professional Design
+A stunning, responsive interface built with Tailwind CSS featuring smooth animations, gradient effects, and an intuitive user experience. The website maintains a professional legal aesthetic while incorporating contemporary design trends that engage visitors and build trust.
+
+### 3. 💼 Comprehensive Legal Showcase
+Complete presentation of legal services including detailed attorney profiles, case studies, blog articles, and integrated contact forms. The dynamic blog system keeps clients informed with legal insights, while the appointment booking system streamlines client intake processes.
+
 ## ✨ Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
